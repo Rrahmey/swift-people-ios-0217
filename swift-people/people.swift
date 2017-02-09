@@ -10,15 +10,15 @@
 import Foundation
 
 class Person {
+    
     let name: String
     var ageInYears: Int?
     var skills:[String] = []
     
     var qualifiedTutor: Bool {
-        switch self.qualifiedTutor {
-        case skills.count >= 4:
+        if skills.count >= 4{
             return true
-        default:
+        } else {
             return false
         }
     }
